@@ -116,23 +116,29 @@ export default function Portfolio() {
               </Button>
             </div>
           </div>
-          <Card className="rounded-2xl border border-red-900/60 bg-neutral-950/90 shadow-lg">
-            <CardContent className="p-5 text-sm">
-              <div className="font-semibold mb-2 text-red-100">Quick Facts</div>
-              <ul className="space-y-2 list-disc pl-5 text-neutral-300">
-                <li>MS CS (Data Science track) at NC State.</li>
-                <li>
-                  End-to-end pipelines: Python/SQL → dashboards (Tableau/Power
-                  BI).
-                </li>
-                <li>
-                  Experience across finance, marketing analytics, and research
-                  data.
-                </li>
-              </ul>
-            </CardContent>
-          </Card>
-        </div>
+          <div className="relative flex items-center justify-center">
+  {/* Red Glow Behind Image */}
+  <div className="relative flex items-center justify-center">
+  {/* Soft red glow behind */}
+  <div className="absolute h-60 w-60 rounded-full bg-red-600/40 blur-3xl opacity-40"></div>
+
+  {/* Circular cropped image */}
+  <img
+    src="/profile.jpg"
+    alt="Sri Lakshmi Kotha"
+    className="
+      relative z-10
+      h-60 w-60
+      object-cover
+      rounded-full
+      shadow-[0_0_25px_rgba(255,0,0,0.5)]
+      border border-red-500/40
+    "
+    style={{ objectPosition: "center top" }} // keeps head centered
+  />
+</div>
+</div>
+</div>
       </section>
 
       {/* Education */}
@@ -233,45 +239,49 @@ export default function Portfolio() {
           </CardContent>
         </Card>
 
-        {/* Applied Data Finance */}
+        {/* Northern Trust */}
         <Card className="group relative mb-6 overflow-hidden rounded-2xl border border-red-900/70 bg-neutral-950/95 shadow-lg transition-all duration-200 hover:-translate-y-1.5 hover:shadow-2xl">
           <div className="pointer-events-none absolute inset-x-0 -top-20 h-36 bg-red-800/35 blur-3xl" />
           <CardContent className="relative p-6">
             <div className="flex flex-wrap items-center gap-2 mb-3">
               <div className="inline-flex items-center gap-2 rounded-full bg-red-900/70 px-3 py-1 text-xs font-medium text-red-100">
                 <Briefcase className="h-3.5 w-3.5" />
-                Junior Data Scientist
+                Data Analyst
               </div>
               <span className="text-sm text-neutral-400">
-                · Applied Data Finance
+                · Northern Trust
               </span>
               <span className="ml-auto text-xs text-neutral-400">
-                Jun 2022 – Jul 2023
+                Jan 2025 – Present
               </span>
             </div>
 
             <ul className="list-disc pl-6 space-y-2 text-sm text-neutral-200">
               <li>
-                Owned Tableau KPI dashboards and automated insight delivery,
-                reducing manual reporting by 40%.
+              Analyzed 30M+ rows of transaction and credit data using SQL and Python 
+              to identify customer spend, utilization, and repayment behavior across products and time periods.
               </li>
               <li>
-                Ran A/B tests on UX flows (Python/SQL) that raised form
-                completion rates by 12%.
+              Built and evaluated classification and regression models with feature engineering 
+              and ROC-AUC / precision-recall metrics to detect early churn and delinquency, improving detection accuracy by 22%.
               </li>
               <li>
-                Optimized cost-per-lead by 18% via multi-channel marketing
-                analysis in Snowflake.
+              Designed Power BI dashboards with 40+ KPIs used by finance and risk leaders in weekly reviews, 
+              replacing static Excel reports and reducing preparation effort by 50%+.
               </li>
               <li>
-                Developed an XGBoost churn model (ROC–AUC 0.87) that enabled
-                campaigns reducing churn by 10%.
+              Performed time-series forecasting on spend and payment trends to support quarterly planning, budget projections, 
+              and portfolio stress-testing discussions with senior stakeholders.
+              </li>
+              <li>
+              Automated data ingestion and transformation pipelines processing 5M+ records per run, 
+              improving enterprise data freshness by 35% and reducing ad-hoc analyst requests.
               </li>
             </ul>
           </CardContent>
         </Card>
 
-        {/* Matillion */}
+        {/* Citius Tech */}
         <Card className="group relative mb-6 overflow-hidden rounded-2xl border border-red-900/70 bg-neutral-950/95 shadow-lg transition-all duration-200 hover:-translate-y-1.5 hover:shadow-2xl">
           <div className="pointer-events-none absolute inset-x-0 -top-20 h-36 bg-red-900/40 blur-3xl" />
           <CardContent className="relative p-6">
@@ -280,24 +290,32 @@ export default function Portfolio() {
                 <Briefcase className="h-3.5 w-3.5" />
                 Data Analyst
               </div>
-              <span className="text-sm text-neutral-400">· Matillion</span>
+              <span className="text-sm text-neutral-400">· Citius Tech</span>
               <span className="ml-auto text-xs text-neutral-400">
-                Jan 2021 – Dec 2021
+                Apr 2021 – July 2023
               </span>
             </div>
 
             <ul className="list-disc pl-6 space-y-2 text-sm text-neutral-200">
               <li>
-                Automated 15+ Power BI dashboards backed by Redshift/S3,
-                improving reporting efficiency by 40%.
+              Analyzed 15M+ healthcare and operational records using SQL and Python to support cost tracking, 
+              utilization analysis, and performance reporting for multiple US-based healthcare clients.
               </li>
               <li>
-                Delivered sales pipeline analytics across global BUs with SQL
-                and Power Query, achieving 95% forecast accuracy.
+              Built and maintained Tableau and Power BI dashboards consumed by 50+ stakeholders, 
+              reducing turnaround time for recurring and executive reporting by 40%.
               </li>
               <li>
-                Instituted data validation and governance checks, reducing
-                reporting errors by 60%.
+              Developed predictive models to identify high-risk claims and operational bottlenecks, 
+              contributing to a 17% reduction in downstream processing delays.
+              </li>
+              <li>
+              Conducted exploratory data analysis and data validation, 
+              improving reporting accuracy by 25% and preventing incorrect interpretations during client reviews.
+              </li>
+              <li>
+              Created reusable SQL queries and Python scripts and collaborated with engineering 
+              and QA teams across 10+ Agile releases, reducing repetitive ad-hoc analysis work by ~30%.
               </li>
             </ul>
           </CardContent>
