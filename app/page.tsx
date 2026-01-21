@@ -201,43 +201,7 @@ export default function Portfolio() {
           Experience
         </h2>
 
-        {/* NCSU */}
-        <Card className="group relative mb-6 overflow-hidden rounded-2xl border border-red-900/70 bg-neutral-950/95 shadow-lg transition-all duration-200 hover:-translate-y-1.5 hover:shadow-2xl">
-          <div className="pointer-events-none absolute inset-x-0 -top-20 h-36 bg-red-700/40 blur-3xl" />
-          <CardContent className="relative p-6">
-            <div className="flex flex-wrap items-center gap-2 mb-3">
-              <div className="inline-flex items-center gap-2 rounded-full bg-red-900/70 px-3 py-1 text-xs font-medium text-red-100">
-                <Briefcase className="h-3.5 w-3.5" />
-                Database Developer / Data Analyst
-              </div>
-              <span className="text-sm text-neutral-400">
-                · North Carolina State University
-              </span>
-              <span className="ml-auto text-xs text-neutral-400">
-                Jun 2024 – Present
-              </span>
-            </div>
-
-            <ul className="list-disc pl-6 space-y-2 text-sm text-neutral-200">
-              <li>
-                Built a high-throughput phenotyping pipeline for Lemna using
-                YOLOv8 and barcode decoding.
-              </li>
-              <li>
-                Processed 1K+ RGB images from 8 synchronized cameras via Python,
-                OpenCV, and PyTorch.
-              </li>
-              <li>
-                Designed a PostgreSQL schema and analytics views for experiment
-                metadata and results.
-              </li>
-              <li>
-                Analyzed growth rates and produced Power BI dashboards to
-                surface optimal conditions.
-              </li>
-            </ul>
-          </CardContent>
-        </Card>
+        
 
         {/* Northern Trust */}
         <Card className="group relative mb-6 overflow-hidden rounded-2xl border border-red-900/70 bg-neutral-950/95 shadow-lg transition-all duration-200 hover:-translate-y-1.5 hover:shadow-2xl">
@@ -625,14 +589,14 @@ export default function Portfolio() {
               Let’s collaborate
             </h2>
             <p className="mt-2 text-neutral-300 max-w-2xl mx-auto">
-              Charlotte, NC · lakshmikotha77@gmail.com · 919-633-7921
+              Charlotte, NC · lakshmikotha3088@gmail.com · 704-666-3088
             </p>
             <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
               <Button
                 asChild
                 className="rounded-2xl bg-red-600 hover:bg-red-500 text-sm font-medium"
               >
-                <a href="mailto:lakshmikotha77@gmail.com">
+                <a href="mailto:lakshmikotha3088@gmail.com">
                   <Mail className="h-4 w-4 mr-2" />
                   Email
                 </a>
