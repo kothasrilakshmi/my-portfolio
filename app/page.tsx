@@ -97,7 +97,7 @@ export default function Portfolio() {
               Sri Lakshmi Kotha
             </h1>
             <p className="mt-3 text-neutral-300 max-w-2xl">
-              Data Analyst / Data Scientist with 3+ years of experience
+              Data Analyst with 4+ years of experience
               transforming complex financial, marketing, and research data into
               actionable insights. Skilled in Python, SQL, Snowflake, and AWS
               with hands-on expertise in Tableau and Power BI. I love turning
@@ -203,7 +203,7 @@ export default function Portfolio() {
 
         
 
-        {/* Northern Trust */}
+        {/* Prudential Financial */}
         <Card className="group relative mb-6 overflow-hidden rounded-2xl border border-red-900/70 bg-neutral-950/95 shadow-lg transition-all duration-200 hover:-translate-y-1.5 hover:shadow-2xl">
           <div className="pointer-events-none absolute inset-x-0 -top-20 h-36 bg-red-800/35 blur-3xl" />
           <CardContent className="relative p-6">
@@ -213,7 +213,7 @@ export default function Portfolio() {
                 Data Analyst
               </div>
               <span className="text-sm text-neutral-400">
-                · Northern Trust
+                · Prudential Financial
               </span>
               <span className="ml-auto text-xs text-neutral-400">
                 Jan 2025 – Present
